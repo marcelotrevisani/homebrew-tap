@@ -1,6 +1,6 @@
 cask "cafezim" do
-  version "1.2.1"
-  sha256 "8898b307c6ea1a46a5daf72ab722a714a9acdcc934e298a5e49927bdcd0fda77"
+  version "1.2.2"
+  sha256 "5fdd55eff9714e672a471002418aac5cdf44cdd1a2786c6b4d16012953dcba39"
 
   url "https://github.com/marcelotrevisani/cafezim/releases/download/v#{version}/Cafezim-v#{version}.dmg"
   name "Cafezim"
@@ -8,6 +8,10 @@ cask "cafezim" do
   homepage "https://github.com/marcelotrevisani/cafezim"
 
   app "Cafezim.app"
+
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-cr", "#{appdir}/Cafezim.app"]
+  end
 
   zap trash: [
     "~/Library/Preferences/com.cafezim.app.plist",
