@@ -1,6 +1,6 @@
 cask "cafezim" do
-  version "1.2.2"
-  sha256 "5fdd55eff9714e672a471002418aac5cdf44cdd1a2786c6b4d16012953dcba39"
+  version "1.3.0"
+  sha256 "52f7759c6392390d85c831829f6f9cb1cf92bd6c293db21ef6e2aa750543ec70"
 
   url "https://github.com/marcelotrevisani/cafezim/releases/download/v#{version}/Cafezim-v#{version}.dmg"
   name "Cafezim"
