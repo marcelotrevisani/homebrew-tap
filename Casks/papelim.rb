@@ -1,6 +1,6 @@
 cask "papelim" do
-  version "0.1.0"
-  sha256 "c59df2fb7192d25a51a6945a4988c7556bf7ec8772480dcfd023c96a0e1ad294"
+  version "0.1.1"
+  sha256 "b060b3ec4ced285c80d5951a51af6337bed79607c86322a8cea1365795aee693"
 
   url "https://github.com/marcelotrevisani/papelim/releases/download/v#{version}/Papelim-v#{version}.dmg"
   name "Papelim"
