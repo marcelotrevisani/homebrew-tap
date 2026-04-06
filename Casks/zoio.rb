@@ -1,6 +1,6 @@
 cask "zoio" do
-  version "0.2.1"
-  sha256 "55efefc5fcd54e38e35e36b91d6611a612ace0fdaa4a7de23e2b45cb870fd69b"
+  version "0.3.0"
+  sha256 "ff6d59a2263bb3e0f9adb39fc89549abe4dc2a7eafc6ea924b52709745ba9ded"
 
   url "https://github.com/marcelotrevisani/zoio/releases/download/v#{version}/zoio-v#{version}-macos.dmg"
   name "zoio"
