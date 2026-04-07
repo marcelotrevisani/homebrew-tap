@@ -1,22 +1,22 @@
 class Zoio < Formula
   desc "Cross-platform process resource monitor with real-time plots and CSV export"
   homepage "https://github.com/marcelotrevisani/zoio"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/marcelotrevisani/zoio/releases/download/v#{version}/zoio-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "13a1a4fff26098e22201f567b187b47029441ce11913f3601ffdd8e718666b93"
+      sha256 "e71bc898531b57f73eb3ea17c923196413ec12c6d3ae16c026746136daf4462c"
     else
       url "https://github.com/marcelotrevisani/zoio/releases/download/v#{version}/zoio-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "3558200467ec8fe98892ef36e9568f946611f6d41bf8e0b6c9fba15c0238a328"
+      sha256 "c234be5ae1660086c5573ec8692244d6770b87f4325f385ef11f620ed6b1b2b9"
     end
   end
 
   on_linux do
     url "https://github.com/marcelotrevisani/zoio/releases/download/v#{version}/zoio-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "75a6351a099f5c459e70b4ad6d8f7a925204d8027e1a14f01da102910c2d05f9"
+    sha256 "187999ed09501a7334fcaaa3d3544f49b86e7974b37b12d9c2a2b19d4bbc8cd6"
   end
 
   def install
